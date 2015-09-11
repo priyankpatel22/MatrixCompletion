@@ -1,0 +1,10 @@
+#!/bin/tcsh                                                                                                                                                                   
+#$ -cwd                                                                                                                                                                        
+#$ -o job_team.out                                                                                                                                                             
+#$ -j yes                                                                                                                                                                     
+#$ -pe matlab 16                                                                                                                                                               
+
+cd /home/ppatel/SVT_MostRecent
+/cm/shared/apps/matlab/R2012b/bin/matlab -r "Test_SVT"
+
+echo "done"

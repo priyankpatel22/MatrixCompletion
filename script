@@ -1,0 +1,6 @@
+#$ -S /bin/bash
+#$ -j y
+#$ -V
+#$ -cwd
+
+matlab -nodisplay -r "forLoopTest,exit"

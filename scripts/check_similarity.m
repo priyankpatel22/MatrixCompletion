@@ -1,0 +1,36 @@
+M = B;
+N = trgtmatrix;
+
+%checking similarity between columns seperatly
+
+%display(M);
+%display(N);
+p_316 = 1;
+p_317 = 1;
+p_318 = 1;
+p_319 = 1;
+p_320 = 1;
+
+for i = 1:12689
+    if(M(i,316) == N(i,316))
+        p_316 = p_316 + 1;
+    end;
+    if(M(i,317) == N(i,317))
+        p_317 = p_317 + 1;
+    end;
+    if(M(i,318) == N(i,318))
+        p_318 = p_318 + 1;
+    end;
+    if(M(i,319) == N(i,319))
+        p_319 = p_319 + 1;
+    end;
+    if(M(i,320) == N(i,320))
+        p_320 = p_320 + 1;
+    end;
+end;
+
+display(p_316);
+display(p_317);
+display(p_318);
+display(p_319);
+display(p_320);

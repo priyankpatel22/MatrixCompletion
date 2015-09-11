@@ -1,0 +1,6 @@
+#$ -S /bin/bash
+#$ -j y
+#$ -pe mpich 8
+#$ -V
+#$ -cwd
+/export/software/mpich2-1.4/bin/mpiexec -np 8 /home/ppatel/MPI/examples/mpimm
